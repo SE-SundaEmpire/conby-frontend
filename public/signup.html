@@ -15,23 +15,23 @@
       href="https://fonts.googleapis.com/css?family=Nunito Sans"
       rel="stylesheet"
     />
-    <title>Login</title>
+    <title>Sign Up</title>
   </head>
   <body>
     <div class="row">
       <div class="col-6" id="main">
         <div class="container">
           <img src="img/conby-login.png" id="logo1" alt="logo conby" />
-          <h1>Masuk</h1>
-          <p>Selamat datang di Conby, Ayo mulai konsultasimu sekarang!</p>
+          <h1>Daftar</h1>
+          <p>Yuk buat daftarkan akunmu sekarang juga!</p>
           <button class="btn button-outline google" type="button">
             <img src="img/google-logo.png" id="logo2" />
-            Masuk dengan google
+            Daftar dengan google
           </button>
           <div class="row" id="divider">
             <!-- border and div detail -->
             <div class="col-4" id="hr"><hr /></div>
-            <div class="col-4" id="div-text">atau masuk dengan</div>
+            <div class="col-4" id="div-text">atau daftar dengan</div>
             <div class="col-4" id="hr"><hr /></div>
           </div>
           <!-- belum sesuai design -->
@@ -48,14 +48,38 @@
               name="password"
               placeholder="masukkan kata sandi"
             />
-            <div class="lupa"><a href="#">Lupa kata sandi?</a></div>
+            <div class="label">
+              Konfirmasi Kata Sandi<span class="required">*</span>
+            </div>
+            <input
+              type="password"
+              name="password"
+              placeholder="konfirmasi kata sandi"
+            />
+            <!-- <form action="#">
+              <input
+                type="checkbox"
+                id="agreement"
+                name="user agreement"
+                value="user agreement"
+              />
+              <label for="agreement">
+                Dengan mendaftar saya telah menyetujui
+                <a href="#">Syarat dan Ketentuan</a>, serta Kebijakan Privasi
+                <a href="#"> Blanja.in</a>
+              </label>
+            </form> -->
+            <div class="agreement">
+              Dengan mendaftar saya telah menyetujui
+              <a href="#">Syarat dan Ketentuan</a>, serta Kebijakan Privasi
+              <a href="#"> Blanja.in</a>
+            </div>
+            <!-- TICK BOX MASUK FORM? -->
             <button class="btn button-outline submit" type="submit">
-              Masuk
+              Daftar
             </button>
           </form>
-          <div class="footer">
-            Belum punya akun? <a href="#">Daftar Sekarang</a>
-          </div>
+          <div class="footer">Sudah punya akun? <a href="#">Masuk</a></div>
         </div>
       </div>
       <!--PEMBATAS : POSITIONING TROUBLE-->
