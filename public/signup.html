@@ -56,25 +56,73 @@
               name="password"
               placeholder="konfirmasi kata sandi"
             />
-            <!-- <form action="#">
+            <div class="form-check">
               <input
+                class="form-check-input checkbox"
                 type="checkbox"
-                id="agreement"
-                name="user agreement"
-                value="user agreement"
+                value=""
+                id="flexCheckChecked"
+                checked
               />
-              <label for="agreement">
-                Dengan mendaftar saya telah menyetujui
-                <a href="#">Syarat dan Ketentuan</a>, serta Kebijakan Privasi
-                <a href="#"> Blanja.in</a>
+              <label class="form-check-label" for="flexCheckChecked">
+                <div class="agreement">
+                  Dengan mendaftar saya telah menyetujui
+
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#SyaratKetentuan"
+                    >Syarat dan Ketentuan</a
+                  >, serta Kebijakan Privasi
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#conby"
+                    >Conby</a
+                  >
+                </div>
               </label>
-            </form> -->
-            <div class="agreement">
-              Dengan mendaftar saya telah menyetujui
-              <a href="#">Syarat dan Ketentuan</a>, serta Kebijakan Privasi
-              <a href="#"> Blanja.in</a>
             </div>
-            <!-- TICK BOX MASUK FORM? -->
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="SyaratKetentuan"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title snk" id="SyaratKetentuan">
+                      Syarat dan Ketentuan
+                    </h5>
+                  </div>
+                  <div class="modal-body">HALO</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="conby"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title snk" id="conby">
+                      Kebijakan Privasi
+                    </h5>
+                  </div>
+                  <div class="modal-body">HALO</div>
+                </div>
+              </div>
+            </div>
+            <!-- MODAL -->
             <button class="btn button-outline submit" type="submit">
               Daftar
             </button>

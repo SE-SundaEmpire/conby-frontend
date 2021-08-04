@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Nunito Sans"
       rel="stylesheet"
     />
-    <title>User Settings</title>
+    <title>Profile</title>
   </head>
   <body>
     <div class="row">
@@ -84,28 +84,25 @@
             </div>
             <!-- BREAK : RISQ -->
             <div class="label">Tinggi Badan<span class="required">*</span></div>
-            <input
-              type="text"
-              name="tinggi badan"
-              placeholder="masukkan tinggi badan anak anda (00.00)"
-            />
-            <!-- <div class="input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping">@</span>
+            <div class="input-group flex-nowrap">
               <input
                 type="text"
-                class="form-control"
-                placeholder="Username"
-                aria-label="Username"
+                class="form-control position"
+                placeholder="masukkan tinggi badan anak anda (00.00)"
                 aria-describedby="addon-wrapping"
               />
-            </div> -->
+              <span class="input-group-text unit" id="addon-wrapping">cm</span>
+            </div>
             <div class="label">Berat Badan<span class="required">*</span></div>
-            <input
-              type="text"
-              name="berat badan"
-              placeholder="masukkan berat badan anak anda (00.00)"
-            />
-            <!-- KENAPA ENGGA PAKE INPUT TYPE SUBMIT? -->
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control position"
+                placeholder="masukkan berat badan anak anda (00.00)"
+                aria-describedby="addon-wrapping"
+              />
+              <span class="input-group-text unit" id="addon-wrapping">kg</span>
+            </div>
             <button class="btn button-outline submit-profile" type="submit">
               Simpan
             </button>
@@ -114,7 +111,6 @@
       </div>
       <!--IMAGE POSITIONING-->
       <div class="col-6" id="right-illus">
-        <!-- HOW TO MAKE PICTURE FIXED WHILE SCROLLING -->
         <img src="img/doct-illus.png" alt="Foto seorang dokter" />
       </div>
     </div>
