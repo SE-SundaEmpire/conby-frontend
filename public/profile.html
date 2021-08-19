@@ -22,14 +22,19 @@
       <div class="col-6" id="main">
         <div class="container">
           <img src="img/conby-login.png" id="logo1" alt="logo conby" />
-          <h1 class="main">Harap Lengkapi data berikut!</h1>
+          <h1 class="main-profile">Harap Lengkapi data berikut!</h1>
           <!-- BAGIAN RISQ -->
           <div class="row" id="uploadpic">
             <div class="col-3">
               <img src="img/select-pict.png" />
             </div>
-            <div class="col-3">
+            <div class="col-4">
               <button class="btn btn-outline-info">Unggah Foto Profil</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-outline-secondary" style="width: 108px">
+                Hapus
+              </button>
             </div>
           </div>
           <!-- BAGIAN RISQ -->
@@ -58,6 +63,7 @@
             </div>
             <!-- BREAK : RISQ-->
             <div class="row" id="gender">
+              <!-- MINTA LOGO WARNA PUTIH -->
               <div class="col-6">
                 <input
                   type="radio"
@@ -68,7 +74,7 @@
                   checked
                 />
                 <label class="btn btn-outline" for="inlined1"
-                  >Laki - Laki</label
+                  ><img src="img/male.png" id="logo-gender" />Laki - Laki</label
                 >
               </div>
               <div class="col-6">
@@ -79,7 +85,9 @@
                   id="outlined2"
                   autocomplete="off"
                 />
-                <label class="btn btn-outline" for="outlined2">Perempuan</label>
+                <label class="btn btn-outline" for="outlined2"
+                  ><img src="img/female.png" id="logo-gender" />Perempuan</label
+                >
               </div>
             </div>
             <!-- BREAK : RISQ -->

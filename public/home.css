@@ -1,0 +1,102 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Nunito Sans';
+}
+
+.row {
+  display: flex;
+  margin-bottom: 75px;
+}
+
+.column {
+  flex: 25%;
+  margin-top: 50px;
+}
+
+#mainsection {
+  padding-left: 125px;
+  padding-top: 100px;
+}
+
+#mainsection h1 {
+  font-size: 46px;
+  font-weight: bolder;
+  line-height: (65px*104%);
+}
+
+#mainsection p {
+  font-size: 20px;
+  color: #586A86;
+  line-height: (32px*117%);
+}
+
+#mainsection button, #ads button {
+  color: #00b0d9;
+  font-size: 18px;
+  line-height: (25px*100%);
+  border-radius: 40px;
+  width: 240px;
+  height: 60px;
+}
+
+#docsection, #whysection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+#rating {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 1.25em;
+  padding-top: 1.25em;
+  color: #586A86;
+}
+
+#docsection > div > img, #whysection > div > img {
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+}
+
+#docsection > div, #whysection > div{
+  background-color: #FFFFFF;
+  width: 270px;
+  height: 330px;
+  margin: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#whysection > div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#ads {
+  background-image: url("img/group 680.png");
+  background-repeat: no-repeat;
+  height: 362px;
+  padding-left: 20em;
+  padding-top: 3.25em;
+}
+
+#info h2 {
+  color: white;
+}
+
+#info p {
+  color: #C4CFDF;
+}
+
+#info a {
+  color: #C4CFDF;
+  padding: 0px;
+}
+
+
+
