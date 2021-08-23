@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Nunito Sans"
       rel="stylesheet"
     />
+    <script src="profile.js"></script>
     <title>Profile</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
             <div class="col-4">
               <button class="btn btn-outline-info">Unggah Foto Profil</button>
             </div>
-            <div class="col-3">
+            <div class="col-3 spacing">
               <button class="btn btn-outline-secondary" style="width: 108px">
                 Hapus
               </button>
@@ -73,14 +74,12 @@
                   autocomplete="off"
                   checked
                 />
-                <label class="btn btn-outline" for="inlined1">
-                  <!-- <div class="figure">
-                    <img class="Sirv image-main" data-src="img/male.png" />
-                    <img
-                      class="Sirv image-hover"
-                      data-src="img/malewhite.png"
-                    />
-                  </div> -->
+                <label
+                  class="btn btn-outline size"
+                  for="inlined1"
+                  onmouseover="hover(this,'img/malewhite.png','logo-gender1');"
+                  onmouseout="unhover(this,'img/male.png','logo-gender1');"
+                >
                   <img src="img/male.png" id="logo-gender1" />Laki - Laki</label
                 >
               </div>
@@ -92,7 +91,11 @@
                   id="outlined2"
                   autocomplete="off"
                 />
-                <label class="btn btn-outline" for="outlined2"
+                <label
+                  class="btn btn-outline female"
+                  for="outlined2"
+                  onmouseover="hover(this,'img/femalewhite.png','logo-gender2');"
+                  onmouseout="unhover(this,'img/female.png','logo-gender2');"
                   ><img
                     src="img/female.png"
                     id="logo-gender2"
@@ -136,7 +139,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-      src="https://scripts.sirv.com/sirvjs/v3/sirv.js"
     ></script>
   </body>
 </html>
