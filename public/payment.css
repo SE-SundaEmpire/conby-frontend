@@ -9,10 +9,12 @@ body {
   margin-bottom: 75px;
 }
 
+/* styling col-8 */
 .adjustment {
   padding: 0px;
 }
-/* payment.html styling */
+
+/* styling doctor profile in payment.html styling */
 .profcard {
   width: 310px;
   height: 275px;
@@ -25,10 +27,12 @@ body {
   border-radius: 10px;
 }
 
+/* styling affecting only img */
 .profcard > img {
   margin: 30px 106px 0px 104px;
 }
 
+/* styling doctor's name in doctor profile */
 .docname {
   font-style: normal;
   font-weight: bold;
@@ -42,6 +46,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* styling doctor's profession */
 #docprof {
   font-style: normal;
   font-weight: normal;
@@ -51,6 +56,7 @@ body {
   color: #586a86;
 }
 
+/* styling rating section */
 .rating {
   margin-top: 16px;
   margin-bottom: 30px;
@@ -59,6 +65,7 @@ body {
   justify-content: center;
 }
 
+/* styling number beside stars in rating */
 .number {
   font-style: normal;
   font-weight: normal;
@@ -70,6 +77,7 @@ body {
   margin-left: 11px;
 }
 
+/* styling main container in payment.html */
 .main {
   margin-top: 73px;
   margin-right: 175px;
@@ -87,6 +95,7 @@ body {
   color: #0e2445;
 }
 
+/* styling description below checkout header */
 #description {
   width: 770px;
   font-style: normal;
@@ -99,6 +108,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* styling information regarding payment detail */
 .information {
   width: 770px;
   height: 502px;
@@ -109,6 +119,7 @@ body {
   padding: 0;
 }
 
+/* styling p tag inside payment detail section */
 .content {
   font-style: normal;
   font-weight: normal;
@@ -120,6 +131,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* styling span tag */
 .details {
   font-style: normal;
   font-weight: normal;
@@ -130,10 +142,12 @@ body {
   color: #0e2445;
 }
 
+/* styling applied only for date and time */
 #dateNtime {
   margin-left: 15px;
 }
 
+/* positioning calendar and clock position */
 .calendar {
   margin-left: 408px;
 }
@@ -142,6 +156,7 @@ body {
   margin-left: 472px;
 }
 
+/* styling payment detail information header */
 .header {
   font-style: normal;
   font-weight: bold;
@@ -154,6 +169,7 @@ body {
   margin-bottom: 25px;
 }
 
+/* styling bank account information section */
 .accnum {
   width: 710px;
   height: 146px;
@@ -168,6 +184,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* styling header for transfer information */
 #transferHeader {
   padding-top: 20px;
   margin-left: 20px;
