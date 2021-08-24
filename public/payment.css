@@ -9,12 +9,16 @@ body {
   margin-bottom: 75px;
 }
 
+.adjustment {
+  padding: 0px;
+}
 /* payment.html styling */
 .profcard {
   width: 310px;
   height: 275px;
-  margin-left: 135px;
+  margin-left: 200px;
   margin-top: 60px;
+  margin-bottom: 145px;
   text-align: center;
 
   background: #ffffff;
@@ -22,11 +26,57 @@ body {
 }
 
 .profcard > img {
-  margin: 30px 106px 145px 104px;
+  margin: 30px 106px 0px 104px;
 }
 
-.col-8 > p {
+.docname {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #000000;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#docprof {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #586a86;
+}
+
+.rating {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #586a86;
+  margin-left: 11px;
+}
+
+.main {
   margin-top: 73px;
+  margin-right: 175px;
+  padding: 0;
+}
+
+.main > p {
   margin-bottom: 0;
 
   font-style: normal;
@@ -38,6 +88,7 @@ body {
 }
 
 #description {
+  width: 770px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -46,7 +97,6 @@ body {
 
   margin-top: 15px;
   margin-bottom: 30px;
-  margin-right: 175px;
 }
 
 .information {
@@ -55,7 +105,6 @@ body {
   background: #ffffff;
   border-radius: 10px;
 
-  margin-right: 175px;
   margin-left: 0;
   padding: 0;
 }
@@ -71,9 +120,27 @@ body {
   margin-bottom: 20px;
 }
 
-/* .row1 {
-    margin-top: 30px;
-  } */
+.details {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  justify-items: flex-end;
+
+  color: #0e2445;
+}
+
+#dateNtime {
+  margin-left: 15px;
+}
+
+.calendar {
+  margin-left: 408px;
+}
+
+.clock {
+  margin-left: 472px;
+}
 
 .header {
   font-style: normal;
@@ -95,19 +162,47 @@ body {
 
   background: #f4f7fa;
   border-radius: 10px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-#accnum {
+#transferHeader {
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .banklogo {
   width: 65px;
   height: 24px;
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-right: 655px;
-  margin-bottom: 87px;
+
+  margin-left: 20px;
 }
+
+#co {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #586a86;
+
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#accnum {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #0e2445;
+}
+
 .divider {
   border: 1px solid #ccd3dd;
   width: 710px;
@@ -132,7 +227,11 @@ body {
   padding: 18px 32px 17px 33px;
 
   margin-top: 50px;
-  margin-right: 175px;
+  margin-left: 510px;
+}
+
+.submit:hover {
+  color: #ffffff;
 }
 
 .column {

@@ -143,47 +143,79 @@
 
     <!-- EDIT DISINI -->
     <div class="row checkout" style="margin-top: 67px">
-      <div class="col-4">
+      <div class="col-4 adjustment">
         <div class="profcard">
           <img src="iqmg/doc1.png" alt="Foto seorang dokter" />
-          <!-- <p>dr. Alfian Jafar, Sp.A <br><span id="docprof.">Dokter Anak</p> -->
+          <p class="docname">dr. Alfian Jafar, Sp.A</p>
+          <span id="docprof">Dokter Anak</span>
+          <div class="rating">
+            <img src="img/Star.svg" alt="bintang kecil" />
+            <img src="img/Star.svg" alt="bintang kecil" />
+            <img src="img/Star.svg" alt="bintang kecil" />
+            <img src="img/Star.svg" alt="bintang kecil" />
+            <img src="img/Star.svg" alt="bintang kecil" />
+            <span class="number">5.0</span>
+          </div>
         </div>
       </div>
 
-      <div class="col-8">
-        <p>Checkout</p>
-        <p id="description">
-          Harap transfer sesuai total harga ke rekening yang terlampir. Setelah
-          transfer dilakukan, upload bukti transfer sebagai konfirmasi pemesanan
-        </p>
-        <div class="container information">
-          <div class="row1">
-            <p class="content">Tanggal Konsultasi</p>
-          </div>
-          <div class="row2">
-            <p class="content">Waktu Konsultasi</p>
-          </div>
-          <hr class="divider" />
-          <div class="row3">
+      <div class="col-8 adjustment">
+        <div class="container main">
+          <p>Checkout</p>
+          <p id="description">
+            Harap transfer sesuai total harga ke rekening yang terlampir.
+            Setelah transfer dilakukan, upload bukti transfer sebagai konfirmasi
+            pemesanan
+          </p>
+          <div class="container information">
+            <p class="content" style="padding-top: 31px">
+              Tanggal Konsultasi
+              <img
+                src="img/Calendar.svg"
+                alt="ikon kalender"
+                class="calendar"
+              />
+              <span class="details" id="dateNtime">21 Agustus 2021</span>
+            </p>
+            <p class="content">
+              Waktu Konsultasi
+              <img src="img/Time Circle.svg" alt="ikon jam" class="clock" />
+              <span class="details" id="dateNtime"> 10:00 AM</span>
+            </p>
+            <hr class="divider" />
             <p class="header">Detail Pembayaran</p>
+            <p class="content">
+              Harga Konsultasi
+              <span class="details" style="margin-left: 501px">Rp 300.000</span>
+            </p>
+            <p class="content">
+              Kode Unik
+              <span class="details" style="margin-left: 583px">Rp 256</span>
+            </p>
+            <p class="content" style="margin-bottom: 32px">
+              Total Harga
+              <span
+                class="details"
+                style="font-weight: bold; margin-left: 538px"
+                >Rp 300.256</span
+              >
+            </p>
+            <div class="accnum">
+              <p class="header" id="transferHeader">Transfer Pembayaran</p>
+              <img src="img/BRI.svg" alt="logo bank BRI" class="banklogo" />
+              <p id="co">
+                PT Conby Indonesia <span id="accnum">(3101 20203 1012)</span>
+              </p>
+            </div>
           </div>
-          <div class="row4">
-            <p class="content">Harga Konsultasi</p>
-          </div>
-          <div class="row5">
-            <p class="content">Kode Unik</p>
-          </div>
-          <div class="row6">
-            <p class="content">Total Harga</p>
-          </div>
-          <div class="accnum">
-            <p class="header" id="accnum">Transfer Pembayaran</p>
-            <img src="img/BRI.png" alt="logo bank BRI" class="banklogo" />
-          </div>
+          <button
+            class="btn button-outline submit"
+            type="submit"
+            onclick="window.location.href = 'https://wa.me/62856021024466';"
+          >
+            Konfirmasi Pembayaran
+          </button>
         </div>
-        <button class="btn button-outline submit" type="submit">
-          Konfirmasi Pembayaran
-        </button>
       </div>
     </div>
 
@@ -219,7 +251,7 @@
         <br />
         <p>
           Gedung Mewah, Jalan Belak-belok No.12, Bojongsoang, Bandung 12230<br />Phone
-          : 0290102038<br />E-mail : conby.co@gmail.com
+          : 0290102038<br />E-mail : synergybangoonconby@gmail.com
         </p>
       </div>
     </div>
@@ -253,10 +285,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
-      });
-    </script>
   </body>
 </html>
