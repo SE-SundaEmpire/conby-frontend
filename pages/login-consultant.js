@@ -7,7 +7,7 @@ export default function Login() {
     const accessToken = localStorage.getItem("accessToken");
 
     if (accessToken !== null) {
-      window.location = "/profile";
+      // window.location = "/profile";
     }
   });
 
@@ -19,7 +19,7 @@ export default function Login() {
     const password = form.querySelector("input[name=password]").value;
     const data = { email, password };
 
-    const url = "https://conby-backend.herokuapp.com/users/login";
+    const url = "https://conby-backend.herokuapp.com/consultant/login";
 
     // request header
     const opt = {
@@ -38,7 +38,7 @@ export default function Login() {
         const { accessToken } = json.data;
 
         window.localStorage.setItem("accessToken", accessToken);
-        window.location = "/profile";
+        // window.location = "/profile";
       } else if (json.status === 401) {
         alert(json.message);
       } else {
@@ -57,7 +57,7 @@ export default function Login() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="img/iconby.png" type="image" sizes="16x16" />
         <link href="credentials.css" rel="stylesheet" />
-        <title>Login</title>
+        <title>Login Konsultan</title>
       </Head>
       <>
         <div className="row">
@@ -65,26 +65,14 @@ export default function Login() {
             <div className="container">
               <img src="img/conby-login.png" id="logo1" alt="logo conby" />
               <h1 className="main">Masuk</h1>
-              <p>Selamat datang di Conby, Ayo mulai konsultasimu sekarang!</p>
-              <button className="btn button-outline google" type="button">
-                <img src="img/google-logo.png" id="logo2" />
-                Masuk dengan google
-              </button>
-              <div className="row" id="divider">
-                {/* <!-- border and div detail --> */}
-                <div className="col-4" id="hr">
-                  <hr />
-                </div>
-                <div className="col-4" id="div-text">
-                  atau masuk dengan
-                </div>
-                <div className="col-4" id="hr">
-                  <hr />
-                </div>
-              </div>
+              <p>Selamat datang di Conby!</p>
               {/* <!-- belum sesuai design --> */}
-              <form method="POST" action="/login" onSubmit={handleLogin}>
-                <div className="label">
+              <form
+                method="POST"
+                action="/login-consultant"
+                onSubmit={handleLogin}
+              >
+                <div className="label" id="consultant">
                   Email<span className="required">*</span>
                 </div>
                 <input
@@ -100,16 +88,13 @@ export default function Login() {
                   name="password"
                   placeholder="masukkan kata sandi"
                 />
-                <div className="lupa">
-                  <a href="#">Lupa kata sandi?</a>
-                </div>
-                <button className="btn button-outline submit" type="submit">
+                <button
+                  className="btn button-outline submit consul-submit"
+                  type="submit"
+                >
                   Masuk
                 </button>
               </form>
-              <div className="footer">
-                Belum punya akun? <a href="/register">Daftar Sekarang</a>
-              </div>
             </div>
           </div>
           <div className="col-6" id="right-illus">
