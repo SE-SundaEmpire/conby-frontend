@@ -1,117 +1,11 @@
 body {
   overflow-x: hidden;
-  font-family: "Nunito Sans";
-  background-color: #f4f7fa;
+  font-family: 'Nunito Sans';
 }
 
 .row {
   display: flex;
   margin-bottom: 75px;
-}
-
-/* payment.html styling */
-.profcard {
-  width: 310px;
-  height: 275px;
-  margin-left: 135px;
-  margin-top: 60px;
-  text-align: center;
-
-  background: #ffffff;
-  border-radius: 10px;
-}
-
-.profcard > img {
-  margin: 30px 106px 145px 104px;
-}
-
-.col-8 > p {
-  margin-top: 73px;
-  margin-bottom: 0;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-
-  color: #0e2445;
-}
-
-#description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-  color: #586a86;
-
-  margin-top: 15px;
-  margin-bottom: 30px;
-  margin-right: 175px;
-}
-
-.information {
-  width: 770px;
-  height: 502px;
-  background: #ffffff;
-  border-radius: 10px;
-
-  margin-right: 175px;
-  margin-left: 0;
-  padding: 0;
-}
-
-.content {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #586a86;
-
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-/* .row1 {
-  margin-top: 30px;
-} */
-
-.header {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-
-  color: #0e2445;
-
-  margin-left: 30px;
-  margin-bottom: 25px;
-}
-
-.divider {
-  border: 1px solid #ccd3dd;
-  width: 710px;
-  height: 0px;
-  margin: 20px 30px;
-}
-
-.submit {
-  width: 260px;
-  height: 60px;
-
-  background: #00b0d9;
-  border-radius: 40px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-
-  color: #ffffff;
-
-  padding: 18px 32px 17px 33px;
-
-  margin-top: 50px;
-  margin-right: 175px;
 }
 
 .column {
@@ -127,27 +21,25 @@ body {
 #mainsection h1 {
   font-size: 46px;
   font-weight: bolder;
-  line-height: (65px * 104%);
+  line-height: (65px*104%);
 }
 
 #mainsection p {
   font-size: 20px;
-  color: #586a86;
-  line-height: (32px * 117%);
+  color: #586A86;
+  line-height: (32px*117%);
 }
 
-#mainsection button,
-#ads button {
+#mainsection button, #ads button {
   color: #00b0d9;
   font-size: 18px;
-  line-height: (25px * 100%);
+  line-height: (25px*100%);
   border-radius: 40px;
   width: 240px;
   height: 60px;
 }
 
-#docsection,
-#whysection {
+#docsection, #whysection {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -161,18 +53,16 @@ body {
   text-align: left;
   padding-left: 1.25em;
   padding-top: 1.25em;
-  color: #586a86;
+  color: #586A86;
 }
 
-#docsection > div > img,
-#whysection > div > img {
+#docsection > div > img, #whysection > div > img {
   padding-top: 0.75em;
   padding-bottom: 1em;
 }
 
-#docsection > div,
-#whysection > div {
-  background-color: #ffffff;
+#docsection > div, #whysection > div{
+  background-color: #FFFFFF;
   width: 270px;
   height: 330px;
   margin: 15px;
@@ -200,10 +90,13 @@ body {
 }
 
 #info p {
-  color: #c4cfdf;
+  color: #C4CFDF;
 }
 
 #info a {
-  color: #c4cfdf;
+  color: #C4CFDF;
   padding: 0px;
 }
+
+
+
