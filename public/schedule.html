@@ -143,8 +143,8 @@
 
     <!-- EDIT DISINI -->
     <div>
-      <div class="sched-fnd" style="margin-top: 67px" ;>
-        <div class="container hist-details">
+      <div class="sched-wrapper" style="margin-top: 67px" ;>
+        <div class="container sched-details" style="margin-bottom: 40px; height: 321px;">
           <div class="first-row" style="display: flex">
             <div class="col-2.5">
               <img
@@ -161,24 +161,94 @@
               >
             </div>
             <div class="col-2">
-              <button class="btn disabled" id="symb">Sudah Dibayar</button>
+              <button class="btn disabled" id="paid">Sudah Dibayar</button>
             </div>
           </div>
           <!-- BAGIAN RISQ -->
           <div class="sec-row" style="display: flex">
             <div class="col-3" style="margin-left: 100px">
-              <p><img src="img/Calendar.svg" />&ensp;Rabu 25 August</p>
+              <p class="date"><img src="img/Calendar.svg" />&ensp;21 Agustus 2021</p>
             </div>
             <div class="col-2" style="margin-left: 100px">
-              <p><img src="img/Time Circle.svg" />&ensp;10:00 AM</p>
+              <p class="time"><img src="img/Time Circle.svg" />&ensp;10:00 AM</p>
             </div>
           </div>
           <!-- BAGIAN RISQ -->
           <hr class="divider" />
-          <div></div>
-          <div></div>
+          <div style="margin: 25px 622px 20px 30px;"><p class="meet-details">Link tatap muka</p></div>
+          <div class="grey-container">
+            <span class="meet-url">https://meet.google.com/kqn-fxjp-rnd</span>
+            <img src="img/copycon.svg" alt="copy icon" class="copycon"/>
+          </div>
+        </div>
+      
+      
+      
+      </div>
+
+      <div class="container sched-details unpaid-sect" style="margin-bottom: 30px; margin-top: 0;">
+        <div class="first-row" style="display: flex">
+          <div class="col-2.5">
+            <img
+              src="img/doc2.svg"
+              alt="Foto seorang dokter"
+              class="doct-pict"
+            />
+          </div>
+          <div class="col-8" style="margin-top: 33px">
+            <span class="doct-name"
+              >dr. Amanda Sari, Sp.A<br /><span class="doct-proff"
+                >Dokter Anak</span
+              ></span
+            >
+          </div>
+          <div class="col-2">
+            <button class="btn disabled" id="unpaid">Belum Dibayar</button>
+          </div>
+        </div>
+        <!-- BAGIAN RISQ -->
+        <div class="sec-row" style="display: flex">
+          <div class="col-3" style="margin-left: 100px">
+            <p class="date"><img src="img/Calendar.svg" />&ensp;21 Agustus 2021</p>
+          </div>
+          <div class="col-2" style="margin-left: 100px">
+            <p class="time"><img src="img/Time Circle.svg" />&ensp;10:00 AM</p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="container sched-details cancelled-sect" style="margin-bottom: 80px; margin-top: 0;">
+      <div class="first-row" style="display: flex">
+        <div class="col-2.5">
+          <img
+            src="img/doc3.svg"
+            alt="Foto seorang dokter"
+            class="doct-pict"
+          />
+        </div>
+        <div class="col-8" style="margin-top: 33px">
+          <span class="doct-name"
+            >dr. Muh Harudin, Sp.A<br /><span class="doct-proff"
+              >Dokter Anak</span
+            ></span
+          >
+        </div>
+        <div class="col-2">
+          <button class="btn disabled" id="cancelled">Dibatalkan</button>
+        </div>
+      </div>
+      <!-- BAGIAN RISQ -->
+      <div class="sec-row" style="display: flex">
+        <div class="col-3" style="margin-left: 100px">
+          <p class="date"><img src="img/Calendar.svg" />&ensp;21 Agustus 2021</p>
+        </div>
+        <div class="col-2" style="margin-left: 100px">
+          <p class="time"><img src="img/Time Circle.svg" />&ensp;10:00 AM</p>
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
 
     <!-- FOOTER -->
