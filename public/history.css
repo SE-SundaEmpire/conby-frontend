@@ -234,6 +234,7 @@ body {
 .modal-footer {
   border: none;
 }
+
 .modal-footer {
   margin-top: 15px;
   justify-content: center;
@@ -243,6 +244,7 @@ body {
   max-width: 600px;
   max-height: 541px;
 }
+
 .modal-container {
   background: #ffffff;
   border-radius: 10px;
@@ -437,3 +439,41 @@ body {
   color: #c4cfdf;
   padding: 0px;
 }
+
+/* tombol */
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30;
+}
+
+#myBtnContainer .btn {
+  border: 1px solid #ccd3dd;
+  border-radius: 50px;
+  outline: none;
+  padding: 15px 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+#myBtnContainer .btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+#myBtnContainer .btn.active {
+  background-color: #094aa9;
+  color: white;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+/* tombol-end */

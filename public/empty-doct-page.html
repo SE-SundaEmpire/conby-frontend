@@ -13,14 +13,14 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" href="history.css" />
+    <link rel="stylesheet" type="text/css" href="payment.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Nunito Sans"
       rel="stylesheet"
     />
     <link rel="icon" href="iqmg/icon.svg" type="image" sizes="16x16" />
 
-    <title>Jadwal Konsultasi 1</title>
+    <title>Jadwal Praktek</title>
   </head>
 
   <body>
@@ -55,14 +55,8 @@
             <a class="nav-link active" href="#" style="padding-left: 3em"
               >Forum</a
             >
-            <a class="nav-link active" href="#" style="padding-left: 3em"
-              >Jadwal Konsultasi</a
-            >
-            <a class="nav-link active" href="#" style="padding-left: 3em"
-              >Riwayat</a
-            >
-            <!-- <a class="nav-link active" href="#" style="padding-left: 3em;"><img src="img/Notification.png"></a> -->
-            <div class="dropdown" style="padding-left: 15em">
+
+            <div class="dropdown" style="padding-left: 25em">
               <button
                 class="btn me-2"
                 type="button"
@@ -94,15 +88,15 @@
                 </li>
               </ul>
             </div>
-            <a style="padding-left: 3em"
-              ><img src="iqmg/userpic.png" style="height: 40px"
+            <a style="padding-left: 2em"
+              ><img src="img/ava.svg" style="height: 40px"
             /></a>
             <a
               class="nav-link disabled"
               id="namebar"
               href="#"
               style="padding-left: 2em"
-              >Hiken No Ace</a
+              >dr. Alfian Jafa...</a
             >
             <div class="dropdown">
               <button
@@ -142,46 +136,64 @@
     </nav>
 
     <!-- EDIT DISINI -->
-    <div>
-      <div class="sched-wrapper" style="margin-top: 67px" ;>
-        <div class="container sched-details" style="margin-bottom: 117px; height: 321px;">
-          <div class="first-row" style="display: flex">
-            <div class="col-2.5">
-              <img
-                src="img/doc1.svg"
-                alt="Foto seorang dokter"
-                class="doct-pict"
-              />
-            </div>
-            <div class="col-8" style="margin-top: 33px">
-              <span class="doct-name"
-                >dr. Alfian Jafar, Sp.A<br /><span class="doct-proff"
-                  >Dokter Anak</span
-                ></span
-              >
-            </div>
-            <div class="col-2">
-              <button class="btn disabled" id="paid">Sudah Dibayar</button>
-            </div>
+    <div class="row checkout" style="margin-top: 67px">
+      <div class="col-4 adjustment">
+        <div class="incomecard">
+          <div style="display: flex">
+            <img src="img/Wallet.svg" alt="Dompet warna biru" class="wallet" />
+            <span class="income-desc">Total Pendapatan</span>
           </div>
-          <!-- BAGIAN RISQ -->
-          <div class="sec-row" style="display: flex">
-            <div class="col-3" style="margin-left: 100px">
-              <p class="date"><img src="img/Calendar.svg" />&ensp;21 Agustus 2021</p>
-            </div>
-            <div class="col-2" style="margin-left: 100px">
-              <p class="time"><img src="img/Time Circle.svg" />&ensp;10:00 AM</p>
-            </div>
+          <div style="display: flex">
+            <p class="Idr" style="width: 45px">Rp</p>
+            <span
+              class="nominal"
+              style="margin-left: 0; width: 131px"
+              type="number"
+              >0</span
+            >
           </div>
-          <!-- BAGIAN RISQ -->
-          <hr class="divider" />
-          <div style="margin: 25px 622px 20px 30px;"><p class="meet-details">Link tatap muka</p></div>
-          <div class="grey-container">
-            <span class="meet-url">https://meet.google.com/kqn-fxjp-rnd</span>
-            <img src="img/copycon.svg" alt="copy icon" class="copycon"/>
+          <div class="withdraw">
+            <center>
+              <button class="btn disabled" type="submit">
+                Ajukan Pencairan
+              </button>
+            </center>
           </div>
         </div>
       </div>
+
+      <div class="col-8 adjustment">
+        <div class="container main">
+          <p style="margin-bottom: 30px">Jadwal Konsultasi</p>
+
+          <!-- Button -->
+          <div
+            class="container"
+            id="tombol"
+            style="padding: 0; margin-bottom: 50px"
+          >
+            <div id="myBtnContainer">
+              <button class="btn active" style="margin-right: 20px">
+                Akan Berlangsung
+              </button>
+              <button class="btn">Selesai</button>
+            </div>
+          </div>
+          <!-- EDIT DISINI -->
+
+          <div class="container no-sched" style="height: 321px">
+            <div>
+              <img
+                src="img/bigcalendar.svg"
+                alt="Big calendar"
+                class="bigcalendar"
+              />
+              <p class="nfdesc">Anda belum memiliki jadwal konsultasi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <div
@@ -201,14 +213,6 @@
           anak<br />
           dengan dokter terbaik di Indonesia
         </p>
-      </div>
-      <div class="column" style="flex: 10%">
-        <h2>Navigasi</h2>
-        <br />
-        <a class="nav-link" href="#">Beranda</a>
-        <a class="nav-link" href="#">Cari Dokter</a>
-        <a class="nav-link" href="#">Artikel</a>
-        <a class="nav-link" href="#">Forum</a>
       </div>
       <div class="column" style="flex: 20%">
         <h2>Hubungi Kami</h2>
@@ -249,5 +253,16 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = btnContainer.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
   </body>
 </html>
