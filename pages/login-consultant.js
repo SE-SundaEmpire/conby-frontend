@@ -7,7 +7,7 @@ export default function Login() {
     const accessToken = localStorage.getItem("accessToken");
 
     if (accessToken !== null) {
-      // window.location = "/profile";
+      window.location = "/doct-page";
     }
   });
 
@@ -38,7 +38,8 @@ export default function Login() {
         const { accessToken } = json.data;
 
         window.localStorage.setItem("accessToken", accessToken);
-        // window.location = "/profile";
+        window.localStorage.setItem("consultantId", consultant._id);
+        window.location = "/doct-page";
       } else if (json.status === 401) {
         alert(json.message);
       } else {

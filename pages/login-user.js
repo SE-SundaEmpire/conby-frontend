@@ -38,6 +38,8 @@ export default function Login() {
         const { accessToken } = json.data;
 
         window.localStorage.setItem("accessToken", accessToken);
+        window.localStorage.setItem("userId", user._id);
+
         window.location = "/profile";
       } else if (json.status === 401) {
         alert(json.message);
