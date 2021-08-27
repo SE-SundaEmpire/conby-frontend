@@ -105,7 +105,7 @@ export default function History() {
                 <a
                   className="nav-link active"
                   href="#"
-                  style={{paddingLeft: "3em"}}
+                  style={{ paddingLeft: "3em" }}
                 >
                   Riwayat
                 </a>

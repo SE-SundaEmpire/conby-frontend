@@ -10,7 +10,6 @@ export default function Login() {
       window.location = "/profile";
     }
   });
-
   async function handleLogin(event) {
     event.preventDefault();
 
@@ -35,7 +34,7 @@ export default function Login() {
       const json = await res.json();
 
       if (json.status === 200) {
-        const { accessToken } = json.data;
+        const { accessToken, user } = json.data;
 
         window.localStorage.setItem("accessToken", accessToken);
         window.localStorage.setItem("userId", user._id);
