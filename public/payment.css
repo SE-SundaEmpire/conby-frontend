@@ -1,0 +1,631 @@
+body {
+  overflow-x: hidden;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  background-color: #f4f7fa;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 75px;
+}
+
+/* styling col-8 */
+.adjustment {
+  padding: 0px;
+}
+
+.incomecard {
+  width: 350px;
+  height: 246px;
+  margin-left: 135px;
+  margin-top: 60px;
+  margin-bottom: 415px;
+
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.wallet {
+  margin-left: 25px;
+  margin-top: 26px;
+  margin-right: 16px;
+}
+
+.income-desc {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #586a86;
+
+  margin-top: 25px;
+  margin-right: 124px;
+}
+
+.Idr,
+.nominal {
+  height: 44px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #0e2445;
+
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+
+/* styling doctor profile in payment.html styling */
+.profcard {
+  width: 310px;
+  height: 275px;
+  margin-left: 200px;
+  margin-top: 60px;
+  margin-bottom: 145px;
+  text-align: center;
+
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* styling affecting only img */
+.profcard > img {
+  margin: 30px 106px 0px 104px;
+}
+
+/* styling doctor's name in doctor profile */
+.docname {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #000000;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* styling doctor's profession */
+#docprof {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #586a86;
+}
+
+/* styling rating section */
+.rating {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* styling number beside stars in rating */
+.number {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #586a86;
+  margin-left: 11px;
+}
+
+/* styling main container in payment.html */
+.main {
+  margin-top: 73px;
+  margin-right: 175px;
+  padding: 0;
+}
+
+.main > p {
+  margin-bottom: 0;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #0e2445;
+}
+
+/* styling description below checkout header */
+#description {
+  width: 770px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #586a86;
+
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* styling information regarding payment detail */
+.information,
+.no-sched {
+  width: 770px;
+  height: 502px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  margin-left: 0;
+  padding: 0;
+}
+
+.nfdesc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #586a86;
+
+  margin: 40px 227px 53px 227px;
+}
+
+.bigcalendar {
+  margin-top: 53px;
+  margin-right: 315px;
+  margin-left: 315px;
+}
+
+/* styling p tag inside payment detail section */
+.content {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #586a86;
+
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* styling span tag */
+.details {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  justify-items: flex-end;
+
+  color: #0e2445;
+}
+
+/* styling applied only for date and time */
+#dateNtime {
+  margin-left: 15px;
+}
+
+/* positioning calendar and clock position */
+.calendar {
+  margin-left: 408px;
+}
+
+.clock {
+  margin-left: 472px;
+}
+
+/* styling payment detail information header */
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #0e2445;
+
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+/* styling bank account information section */
+.accnum {
+  width: 710px;
+  height: 146px;
+  left: 525px;
+  top: 627px;
+
+  background: #f4f7fa;
+  border-radius: 10px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* styling header for transfer information */
+#transferHeader {
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.banklogo {
+  width: 65px;
+  height: 24px;
+
+  margin-left: 20px;
+}
+
+#co {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #586a86;
+
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#accnum {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #0e2445;
+}
+
+.divider {
+  border: 1px solid #ccd3dd;
+  width: 710px;
+  height: 0px;
+  margin: 20px 30px;
+}
+
+.red-container {
+  width: 708px;
+  height: 82px;
+
+  background: rgba(237, 66, 66, 0.05);
+  border: 1px solid #ed4242;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  margin: 30px 32px 30px 30px;
+}
+
+.notice {
+  width: 572px;
+  height: 50px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: #ed4242;
+
+  margin-top: 16px;
+  margin-right: 86px;
+}
+
+.col {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+  width: 24px;
+}
+
+.submit {
+  width: 260px;
+  height: 60px;
+
+  background: #00b0d9;
+  border-radius: 40px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+
+  padding: 18px 32px 17px 33px;
+
+  margin-top: 50px;
+  margin-left: 510px;
+}
+
+.submit:hover {
+  color: #ffffff;
+}
+
+.btn.disabled {
+  width: 300px;
+  height: 60px;
+
+  background: #c5d0d2;
+  border-radius: 40px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.activated {
+  width: 300px;
+  height: 60px;
+
+  background: #00b0d9;
+  border-radius: 40px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.activated:hover {
+  color: #ffffff;
+}
+
+.not-active:hover {
+  color: #ffffff;
+}
+
+/* tombol */
+#myBtnContainer {
+  display: flex;
+  margin-bottom: 30;
+}
+#myBtnContainer .btn {
+  border: 1px solid #ccd3dd;
+  border-radius: 50px;
+  outline: none;
+  padding: 15px 25px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+#myBtnContainer .btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+#myBtnContainer .btn.active {
+  background-color: #094aa9;
+  color: white;
+}
+
+.sched-details {
+  width: 770px;
+  height: 259px;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  margin-top: 60px;
+  margin-bottom: 306px;
+
+  padding: 0;
+}
+
+.doct-pict {
+  width: 60px;
+  height: 60px;
+
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 16px;
+}
+
+.doct-name,
+.user-name {
+  width: 190px;
+  height: 27px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #000000;
+
+  margin-bottom: 6px;
+}
+
+.doct-proff,
+.underlined {
+  width: 90px;
+  height: 22px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #586a86;
+}
+
+.underlined {
+  width: 151px;
+  height: 22px;
+
+  text-decoration-line: underline;
+
+  color: #094aa9;
+}
+
+#paid {
+  width: 123px;
+  height: 29px;
+
+  background: rgba(80, 237, 66, 0.1);
+  border-radius: 4px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #34a646;
+  margin-top: 46px;
+  margin-right: 30px;
+}
+
+.sec-row {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 27px;
+  color: #0e2445;
+}
+
+.sec-row > img {
+  vertical-align: baseline;
+}
+
+.date,
+.time {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #0e2445;
+}
+
+.divider {
+  border: 1px solid #e0e5ed;
+  margin: 0px 30px;
+}
+
+.meet-details {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+
+  color: #0e2445;
+
+  margin: 0;
+}
+
+.grey-container {
+  width: 710px;
+  height: 60px;
+
+  background: #f4f7fa;
+  border-radius: 10px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.meet-url {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0e2445;
+  margin-left: 30px;
+}
+
+.copycon {
+  margin: 18px 30px 18px 319px;
+}
+
+.column {
+  flex: 25%;
+  margin-top: 50px;
+}
+
+#mainsection {
+  padding-left: 125px;
+  padding-top: 100px;
+}
+
+#mainsection h1 {
+  font-size: 46px;
+  font-weight: bolder;
+  line-height: (65px * 104%);
+}
+
+#mainsection p {
+  font-size: 20px;
+  color: #586a86;
+  line-height: (32px * 117%);
+}
+
+#mainsection button,
+#ads button {
+  color: #00b0d9;
+  font-size: 18px;
+  line-height: (25px * 100%);
+  border-radius: 40px;
+  width: 240px;
+  height: 60px;
+}
+
+#docsection,
+#whysection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+#rating {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 1.25em;
+  padding-top: 1.25em;
+  color: #586a86;
+}
+
+#docsection > div > img,
+#whysection > div > img {
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+}
+
+#docsection > div,
+#whysection > div {
+  background-color: #ffffff;
+  width: 270px;
+  height: 330px;
+  margin: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#whysection > div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#ads {
+  background-image: url("img/group 680.png");
+  background-repeat: no-repeat;
+  height: 362px;
+  padding-left: 20em;
+  padding-top: 3.25em;
+}
+
+#info h2 {
+  color: white;
+}
+
+#info p {
+  color: #c4cfdf;
+}
+
+#info a {
+  color: #c4cfdf;
+  padding: 0px;
+}
+
+/* withdraw */
+.withdraw > center > button {
+  width: 300px;
+  height: 60px;
+  border-radius: 40px;
+}
