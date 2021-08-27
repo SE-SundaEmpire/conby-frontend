@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="trialerror.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="trialerror.css">
+    <link rel="icon" href="img/icon.svg" type="image" sizes="16x16">
+
+    <title>Pilih Dokter</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#" >
+          <img src="img/logo1.svg" style="width:145px;height:42px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#" style="padding-left: 5em;">Beranda</a>
+            <a class="nav-link active" href="#" style="padding-left: 3em;">Forum</a>
+            <a class="nav-link active" href="#" style="padding-left: 3em;">Jadwal Konsultasi</a>
+            <a class="nav-link active" href="#" style="padding-left: 3em;">Riwayat</a>
+            <!-- <a class="nav-link active" href="#" style="padding-left: 3em;"><img src="img/Notification.png"></a> -->
+            <div class="dropdown" style="padding-left: 15em;">
+              <button class="btn me-2" type="button" id="dropnotif" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/Notification.png">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropnotif" style="border-radius: 10px; border: 1px solid #00B0D9; box-sizing: border-box;">
+                <li><a class="dropdown-item" href="#" style="color: #586A86;">Notif a</a></li>
+                <li><hr class="dropdown-divider" style="color: #00B0D9;"></li>
+                <li><a class="dropdown-item" href="#" style="color: #586A86;">Notif b</a></li>
+              </ul>
+            </div>
+            <a style="padding-left: 3em;"><img src="img/userpic.png" style="height: 40px;"></a>
+            <a class="nav-link disabled" id="namebar" href="#" style="padding-left: 2em;">Hiken No Ace</a>
+            <div class="dropdown">
+              <button class="btn me-2" type="button" id="dropprof" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/dropdown.png">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropprof" style="border-radius: 10px; border: 1px solid #00B0D9; box-sizing: border-box;">
+                <li><a class="dropdown-item" href="#" style="color: #586A86;">Profile</a></li>
+                <li><hr class="dropdown-divider" style="color: #00B0D9;"></li>
+                <li><a class="dropdown-item" href="#" style="color: red;">Keluar Akun</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row" id="main">
+      <div class="column" id="filter">
+        <h3>Filter</h3>
+        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Harga Konsultasi
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="input-group mb-3" id="inputrupiah">
+                <span class="input-group-text" id="basic-addon1"><strong>Rp</strong></span>
+                <input type="text" class="form-control" placeholder="Harga Minimum" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3" id="inputrupiah">
+                <span class="input-group-text" id="basic-addon1"><strong>Rp</strong></span>
+                <input type="text" class="form-control" placeholder="Harga Maximum" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Urutkan dari terendah
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Urutkan dari tertinggi
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Rating Dokter
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                Semua
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                <img src="img/Star.svg">&nbsp;<img src="img/Star.svg">&nbsp;<img src="img/Star.svg">&nbsp;<img src="img/Star.svg">&nbsp;<img src="img/Star.svg">
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                <img src="img/Star.svg">&nbsp;<img src="img/Star.svg">&nbsp;<img src="img/Star.svg">&nbsp;<img src="img/Star.svg">
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                <img src="img/Star.svg">&nbsp;<img src="img/Star.svg">&nbsp;<img src="img/Star.svg">
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                <img src="img/Star.svg">&nbsp;<img src="img/Star.svg">
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                <img src="img/Star.svg">
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="column" id="list">
+        <div class="row" id="title1">
+          <div class="col" style="flex: 15%">
+            <h3 id="title2">Pilih Dokter untuk Konsultasi</h3>
+          </div>
+          <div class="col">
+            <div class="input-group" id="search">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline" type="button" id="button-addon2"><img src="img/Search.png"></button>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="listdoc">
+          <div class="col-2">
+            <img src="img/doc1.png">
+          </div>
+          <div class="col">
+            <p id="nama">Han Ji Pyeong</p>
+            <p id="job">Business Analyst</p>
+            <p id="rating">Rating sia</p>
+          </div>
+          <div class="col">
+            <p id="cuan">Rp 300.000</p>
+            <button class="btn btn-info me-2" type="button" id="make">Buat Janji</button>
+          </div>
+        </div>
+        <div class="row" id="listdoc">
+          <div class="col-2">
+            <img src="img/doc1.png">
+          </div>
+          <div class="col">
+            <p id="nama">Seo Dal Mi</p>
+            <p id="job">Chief Executive Officer</p>
+            <p id="rating">Rating sia</p>
+          </div>
+          <div class="col">
+            <p id="cuan">Rp 300.000</p>
+            <button class="btn btn-info me-2" type="button" id="make">Buat Janji</button>
+          </div>
+        </div>
+        <div class="row" id="listdoc">
+          <div class="col-2">
+            <img src="img/doc1.png">
+          </div>
+          <div class="col">
+            <p id="nama">Nam Do San</p>
+            <p id="job">Software Engineer</p>
+            <p id="rating">Rating sia</p>
+          </div>
+          <div class="col">
+            <p id="cuan">Rp 300.000</p>
+            <button class="btn btn-info me-2" type="button" id="make">Buat Janji</button>
+          </div>
+        </div>
+        <div class="row" id="pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="background-color: #00234E; margin-bottom: 0px; padding-left: 5%; padding-right: 5%;" id="info">
+      <div class="column" style="flex: 30%;">
+        <img src="img/logo2.svg" style="width: 145px; height: 42px">
+        <p style="padding-top: 2em;">Conby adalah website penyedia <br>jasa layanan konsultasi kesehatan anak<br> dengan dokter terbaik di Indonesia</p>
+      </div>
+      <div class="column" style="flex: 10%;">
+        <h2> Navigasi</h2>
+        <br>
+        <a class="nav-link" href="#">Beranda</a>
+        <a class="nav-link" href="#">Cari Dokter</a>
+        <a class="nav-link" href="#">Artikel</a>
+        <a class="nav-link" href="#">Forum</a>
+      </div>
+      <div class="column" style="flex: 20%;">
+        <h2> Hubungi Kami</h2>
+        <br>
+        <p>Gedung Mewah, Jalan Belak-belok No.12, Bojongsoang, Bandung 12230<br>Phone : 0290102038<br>E-mail : conby.co@gmail.com</p>
+      </div>
+    </div>
+    <div class="row" style="background-color: #00234E; margin-bottom: 0px; padding-left: 5%; padding-right: 5%;" id="footer">
+      <div class="container">
+        <hr style="color: white;">
+      </div>
+      <div class="column" style="flex: 50%; margin-top: 0px;">
+        <p style="font-size: 18px; color: white;"> Copyright © 2021 Conby. All rights reserved</p>
+      </div>
+      <div class="column" style="text-align: right; margin-top: 0px;">
+        <p style="color: white;"> Ikuti Kami :&emsp;<img src="img/facebook.png">&emsp;<img src="img/twitter.png">&emsp;<img src="img/instagram.png"></p>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossOrigin="anonymous"
+    ></script>
+
+  </body>
+</html>

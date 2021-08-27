@@ -1,0 +1,185 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito Sans';
+    background: #F4F7FA;
+  }
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+#docdesc {
+    width: 770px;
+    padding: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+#docdesc > .row {
+    display: flex;
+}
+
+#navbtn {
+    margin-bottom: 30px;
+}
+.nav-link {
+    width: 160px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #586A86;
+    cursor: pointer;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #094AA9;
+}
+.filterDiv {
+    display: none;
+}
+.desc {
+    overflow: hidden;
+}
+
+.show {
+    display: block;
+}
+.red-container {    
+    height: 60px;
+  
+    background: rgba(237, 66, 66, 0.05);
+    border: 1px solid #ed4242;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .notice {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+  
+    color: #ed4242;
+  
+    margin-top: 16px;
+    margin-right: 86px;
+  }
+#tanggal {
+    width: 500px;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #CCD3DD;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+#tanggal:hover {
+    border: 2px solid blue;
+    border-radius: 50px;
+}
+#tanggal:focus {
+    outline: none;
+    border: 2px solid blue;
+    border-radius: 50px;
+}
+
+#tanggal:active {
+    border: none;
+}
+#form1 {
+    display: none;
+}
+.btn {
+    width: 135px;
+    height: 60px;
+    border: 1px solid #CCD3DD;
+    border-radius: 50px;
+    outline: none;
+    padding: 15px 25px;
+    margin: 10px 40px 10px 0px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+.btn:hover {
+    transform: scale(0.9);
+    background-color: #ddd;
+}
+  
+/* Add a dark background to the active button */
+.btn.active {
+    background-color: #094AA9;
+    color: white;
+}
+.filterDiv.Ulasan > h4 {
+    margin-bottom: 20px;
+}
+#booking {
+    width: 310px;
+    height: 175px;
+    padding: 25px;
+    margin-left: 25px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+#booking > p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    color: #ED4242;
+}
+
+#booking > button {
+    width: 260px;
+    height: 60px;
+    border-radius: 40px;
+    color: white;
+    background: #00B0D9;
+}
+
+#booking > button:hover {
+    transform: scale(0.9);
+}
+
+.divider {
+    width: 720px;
+    height: 0px;
+    border: 1px solid #CCD3DD;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.photo-col {
+    width: 120px;
+    height: 120px;
+}
+
+.rating {
+    margin-top: 16px;
+    margin-bottom: 39px;
+}
+
+.number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+  
+    color: #586a86;
+    margin-left: 11px;
+
+    align-items: center;
+  }
