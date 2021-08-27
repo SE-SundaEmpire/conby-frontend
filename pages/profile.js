@@ -127,7 +127,7 @@ export default function Profile() {
                 <div className="col-3 spacing">
                   <button
                     className="btn btn-outline-secondary"
-                    style="width: 108px"
+                    style={{ width: "108px" }}
                   >
                     Hapus
                   </button>
