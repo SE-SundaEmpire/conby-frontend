@@ -104,21 +104,11 @@ export default function Profile() {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="img/iconby.png" type="image" sizes="16x16" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-        />
         <link href="credentials.css" rel="stylesheet" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Nunito Sans"
-          rel="stylesheet"
-        />
-        <script src="profile.js"></script>
+        <script src="/user-profile.js"></script>
         <title>Profile</title>
       </Head>
-      <Body>
+      <>
         <div className="row">
           <div className="col-6" id="main">
             <div className="container">
@@ -196,14 +186,14 @@ export default function Profile() {
                       className="btn-check"
                       name="gender" //options-outlined
                       id="inlined1"
-                      autocomplete="off"
+                      autoComplete="off"
                       checked
                     />
                     <label
                       className="btn btn-outline size"
-                      for="inlined1"
-                      onmouseover="hover(this,'img/malewhite.png','logo-gender1');"
-                      onmouseout="unhover(this,'img/male.png','logo-gender1');"
+                      htmlFor="inlined1"
+                      onMouseOver="hover(this,'img/malewhite.png','logo-gender1');"
+                      onMouseOut="unhover(this,'img/male.png','logo-gender1');"
                     >
                       <img src="img/male.png" id="logo-gender1" />
                       Laki - Laki
@@ -215,13 +205,13 @@ export default function Profile() {
                       className="btn-check"
                       name="gender" //options-outlined
                       id="outlined2"
-                      autocomplete="off"
+                      autoComplete="off"
                     />
                     <label
                       className="btn btn-outline female"
-                      for="outlined2"
-                      onmouseover="hover(this,'img/femalewhite.png','logo-gender2');"
-                      onmouseout="unhover(this,'img/female.png','logo-gender2');"
+                      htmlFor="outlined2"
+                      onMouseOver="hover(this,'img/femalewhite.png','logo-gender2');"
+                      onMouseOut="unhover(this,'img/female.png','logo-gender2');"
                     >
                       <img src="img/female.png" id="logo-gender2" />
                       Perempuan
@@ -278,9 +268,9 @@ export default function Profile() {
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
-      </Body>
+      </>
     </>
   );
 }
