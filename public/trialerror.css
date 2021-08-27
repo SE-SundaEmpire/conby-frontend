@@ -1,0 +1,159 @@
+body {
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  background-color: #F4F7FA;
+}
+
+.row {
+  display: flex;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+#namebar {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0E2445;
+}
+#main {
+  margin-top: 100px
+}
+
+#filter {
+  width: 335px;
+  height: 696px;
+  margin-left: 135px;
+  margin-right: 13px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#filter h3 {
+  height: 75px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 25px 0px 23px 25px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+#panelsStayOpen-collapseOne {
+  margin: 25px
+}
+#panelsStayOpen-collapseTwo {
+  margin: 9px
+}
+#inputrupiah {
+  height: 50px;
+  width: 260px;
+}
+#inputrupiah > input {
+  border-radius: 5px;
+  background-color: #F4F7FA;
+}
+.list-group-item {
+  border: none;
+}
+
+#list {
+  width: 800px;
+  margin-left: 13px;
+}
+#title1 {
+  margin-bottom: 30px;
+}
+#title2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#search {
+  width: 310px;
+  height: 60px;
+}
+
+#search > input {
+  padding-left: 30px;
+  border: none;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: #DFE6ED;
+}
+
+#search > button {
+  padding-right: 20px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #DFE6ED;
+}
+#listdoc {
+  width: 770px;
+  height: 170px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+#listdoc .col-2 img {
+  padding: 30px 0px 0px 18px
+}
+
+#nama {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 35px 0px 12px 12px;
+}
+
+#job {
+  color: #586A86;
+  margin: 0px 0px 12px 12px;
+}
+
+#rating {
+  margin: 0px 0px 12px 12px;
+}
+
+#cuan {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ED4242;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+#make {
+  height: 45px;
+  width: 145px;
+  color: white;
+  margin-left: 80px;
+  border-radius: 40px;
+}
+
+#pagination {
+  margin-top: 60px;
+}
+
+#info {
+  padding-top: 50px;
+}
+#info h2 {
+  color: white;
+}
+
+#info p {
+  color: #C4CFDF;
+}
+
+#info a {
+  color: #C4CFDF;
+  padding: 0px;
+}
+
+#footer .column {
+  flex: 25%;
+}

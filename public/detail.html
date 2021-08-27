@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="detail.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="icon" href="img/icon.svg" type="image" sizes="16x16">
+
+    <title>Conby</title>
+  </head>
+    <body>
+        <div class="row" id="main">
+            <div class="column" id="docdesc">
+                <div class="row" style="height: 120px;">
+                    <div class="column photo-col" style="width: 120px; margin: 0px; padding: 0px;">
+                        <img src="img/doc1.png" style="width: 120px; height: 120px;">
+                    </div>
+                    <div class="col-5" style="margin-left: 25px; padding: 0;">
+                        <h3>dr. Alfian Jafar, Sp.A</h3>
+                        <p style="margin-bottom: 10px">Dokter Anak</p>
+                        <div class="rating">
+                            <img src="img/Star.svg" alt="bintang kecil" />
+                            <img src="img/Star.svg" alt="bintang kecil" />
+                            <img src="img/Star.svg" alt="bintang kecil" />
+                            <img src="img/Star.svg" alt="bintang kecil" />
+                            <img src="img/Star.svg" alt="bintang kecil" />
+                            <span class="number" style="align-content: center;"">5.0</span>
+                          </div>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="row" id="navbtn">
+                    <a class="nav-link active" onclick="filterSelection('Jadwal')">Jadwal Praktik</a>
+                    <a class="nav-link" onclick="filterSelection('Info')">Informasi Dokter</a>
+                    <a class="nav-link" onclick="filterSelection('Ulasan')">Ulasan</a>
+                </div>
+                <div class="desc">
+                    <div class="filterDiv Jadwal">
+                        <div class="red-container">
+                            <div class="notice-wrapper" style="display: flex">
+                              <img
+                                src="img/Info Square.svg"
+                                alt="Icon alert"
+                                style="margin: 16px 10px 42px 16px"
+                              />
+                              <p class="notice">
+                                Anda hanya dapat melakukan pemesanan 1 hari sebelum tanggal konsultasi yang diinginkan
+                              </p>
+                            </div>
+                        </div>
+                        <form id="form">
+                            <h5>Pilih Tanggal Konsultasi</h5>
+                            <input type="date" id="tanggal" name="tanggalbooking" placeholder="dd/mm/yyyy" oninput="document.getElementById('form1').style.display='block';" />
+                        </form>
+                        <form id="form1">
+                            <h5>Pilih Waktu Konsultasi</h5>
+                            <input type="radio" class="btn-check" name="options-outlined" id="outlined2" autocomplete="off">
+                            <label class="btn active" for="outlined2">08.00</label>
+                            <input type="radio" class="btn-check" name="options-outlined" id="outlined3" autocomplete="off">
+                            <label class="btn" for="outlined3">10.00</label>
+                            <input type="radio" class="btn-check" name="options-outlined" id="outlined4" autocomplete="off">
+                            <label class="btn" for="outlined4">13.00</label>
+                            <input type="radio" class="btn-check" name="options-outlined" id="outlined5" autocomplete="off">
+                            <label class="btn" for="outlined5">15.00</label>
+                            <input type="radio" class="btn-check" name="options-outlined" id="outlined6" autocomplete="off">
+                            <label class="btn" for="outlined6">17.00</label>
+                            <input type="radio" class="btn-check" name="options-outlined" id="outlined7" autocomplete="off">
+                            <label class="btn" for="outlined7">20.00</label>
+                        </form>
+                    </div>
+                    <div class="filterDiv Info">
+                        <h4>Profil Dokter</h4>
+                        <p>dr. Muh. Alfian Jafar, Sp.A adalah Dokter Anak yang terhimpun dalam Ikatan Dokter Indonesia (IDI) dan Ikatan Dokter Anak Indonesia (IDAI). Beliau merupakan lulusan Spesialis Anak Universitas Hasanuddin.</p>
+                        <p>dr. Muh. Alfian Jafar, Sp.A berpraktik di RSIA Ananda dan RS Ibnu Sina YW UMI Makassar sebagai Dokter Anak. Beliau dapat membantu layanan Konsultasi kesehatan anak menyeluruh.</p>
+                    </div>
+                    <div class="filterDiv Ulasan">
+                        <h4>Ulasan (?)</h4>
+                        <div class="row" style="display: flex;">
+                            <div class="column" style="width: 74px;">
+                                <img src="img/unknown.svg">
+                            </div>
+                            <div class="col-5">
+                                <h5>Alicia Angelica</h5>
+                                <p>21 Februari 2021</p>
+                            </div>
+                            <div class="col-5" style="display: flex; justify-content: flex-end;">
+                                <div class="rating">
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                </div>
+                            </div>
+                            <div class="column">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum perferendis. Quaerat ducimus necessitatibus asperiores fugit placeat illum. Vitae, quaerat explicabo iure optio corporis culpa totam ut ea nesciunt ipsa.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" style="display: flex;">
+                            <div class="column" style="width: 74px;">
+                                <img src="img/unknown.svg">
+                            </div>
+                            <div class="col-5">
+                                <h5>Alicia Angelica</h5>
+                                <p>21 Februari 2021</p>
+                            </div>
+                            <div class="col-5" style="display: flex; justify-content: flex-end;">
+                                <div class="rating">
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                    <img src="img/Star.svg" alt="bintang kecil" />
+                                </div>
+                            </div>
+                            <div class="column">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum perferendis. Quaerat ducimus necessitatibus asperiores fugit placeat illum. Vitae, quaerat explicabo iure optio corporis culpa totam ut ea nesciunt ipsa.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="booking">
+                <p>RP 300.000</p>
+                <button class="btn btn-info">Booking Dokter</button>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        // Show all elements
+        filterSelection("Jadwal")
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+            }
+        }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("navbtn");
+        var btns = btnContainer.getElementsByClassName("nav-link");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = btnContainer.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+
+        //Highlight current clicked button
+        var btnContainer1 = document.getElementById("form1");
+        var btns1 = btnContainer1.getElementsByClassName("btn");
+        for (var i = 0; i < btns1.length; i++) {
+        btns1[i].addEventListener("click", function() {
+            var current1 = btnContainer1.getElementsByClassName("active");
+            current1[0].className = current1[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+
+        // Cant input date before today
+        var today = new Date()
+        today.setDate(today.getDate() + 1)
+        today = today.toISOString().split('T')[0];    
+        document.getElementsByName("tanggalbooking")[0].setAttribute('min', today);
+    </script>
+    </body>
+</html> 
