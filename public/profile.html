@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/iconby.png" type="image" sizes="16x16" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="credentials.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito Sans"
+      rel="stylesheet"
+    />
+    <script src="profile.js"></script>
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-6" id="main">
+        <div class="container">
+          <img src="img/conby-login.png" id="logo1" alt="logo conby" />
+          <h1 class="main-profile">Harap Lengkapi data berikut!</h1>
+          <!-- BAGIAN RISQ -->
+          <div class="row" id="uploadpic">
+            <div class="col-3">
+              <img src="img/select-pict.png" />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-outline-info">Unggah Foto Profil</button>
+            </div>
+            <div class="col-3 spacing">
+              <button class="btn btn-outline-secondary" style="width: 108px">
+                Hapus
+              </button>
+            </div>
+          </div>
+          <!-- BAGIAN RISQ -->
+          <form>
+            <div class="label-profile">Nama<span class="required">*</span></div>
+            <input type="text" name="nama" placeholder="masukkan nama anda" />
+          </form>
+          <div class="row">
+            <!-- border and div detail -->
+            <div class="col" id="hr-profile"><hr /></div>
+          </div>
+          <h1 class="new-sect">Informasi Anak</h1>
+          <form>
+            <div class="label">Nama Anak<span class="required">*</span></div>
+            <input
+              type="text"
+              name="nama anak"
+              placeholder="masukkan nama anak anda"
+            />
+            <div class="label">
+              Tanggal Lahir<span class="required">*</span>
+            </div>
+            <input type="date" name="tanggal lahir" placeholder="dd/mm/yyyy" />
+            <div class="label">
+              Jenis Kelamin<span class="required">*</span>
+            </div>
+            <!-- BREAK : RISQ-->
+
+            <div class="row" id="gender">
+              <!-- MINTA LOGO WARNA PUTIH -->
+              <div class="col-6">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options-outlined"
+                  id="inlined1"
+                  autocomplete="off"
+                  checked
+                />
+                <label
+                  class="btn btn-outline size"
+                  for="inlined1"
+                  onmouseover="hover(this,'img/malewhite.png','logo-gender1');"
+                  onmouseout="unhover(this,'img/male.png','logo-gender1');"
+                >
+                  <img src="img/male.png" id="logo-gender1" />Laki - Laki</label
+                >
+              </div>
+              <div class="col-6">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options-outlined"
+                  id="outlined2"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline female"
+                  for="outlined2"
+                  onmouseover="hover(this,'img/femalewhite.png','logo-gender2');"
+                  onmouseout="unhover(this,'img/female.png','logo-gender2');"
+                  ><img
+                    src="img/female.png"
+                    id="logo-gender2"
+                  />Perempuan</label
+                >
+              </div>
+            </div>
+            <!-- BREAK : RISQ -->
+            <div class="label">Tinggi Badan<span class="required">*</span></div>
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control position"
+                placeholder="masukkan tinggi badan anak anda (00.00)"
+                aria-describedby="addon-wrapping"
+              />
+              <span class="input-group-text unit" id="addon-wrapping">cm</span>
+            </div>
+            <div class="label">Berat Badan<span class="required">*</span></div>
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control position"
+                placeholder="masukkan berat badan anak anda (00.00)"
+                aria-describedby="addon-wrapping"
+              />
+              <span class="input-group-text unit" id="addon-wrapping">kg</span>
+            </div>
+            <button class="btn button-outline submit-profile" type="submit">
+              Simpan
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--IMAGE POSITIONING-->
+      <div class="col-6" id="right-illus">
+        <img src="img/doct-illus.png" alt="Foto seorang dokter" />
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
