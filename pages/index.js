@@ -90,7 +90,7 @@ export default function Home() {
                 <li>
                   <a
                     className="dropdown-item"
-                    href="#"
+                    href="/login-user"
                     style={{ color: "#586A86" }}
                   >
                     Pelanggan
@@ -105,7 +105,7 @@ export default function Home() {
                 <li>
                   <a
                     className="dropdown-item"
-                    href="#"
+                    href="/login-consultant"
                     style={{ color: "#586A86" }}
                   >
                     Konsultan
